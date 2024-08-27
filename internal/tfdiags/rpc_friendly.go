@@ -1,3 +1,5 @@
+// Copyright (c) Terramate GmbH
+// SPDX-License-Identifier: MPL-2.0
 // Copyright (c) The OpenTofu Authors
 // SPDX-License-Identifier: MPL-2.0
 // Copyright (c) 2023 HashiCorp, Inc.
@@ -65,5 +67,5 @@ func (d rpcFriendlyDiag) ExtraInfo() interface{} {
 }
 
 func init() {
-	gob.Register((*rpcFriendlyDiag)(nil))
+	gob.RegisterName("tfdiags.rpcFriendlyDiag", (*rpcFriendlyDiag)(nil))
 }
