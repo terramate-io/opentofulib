@@ -9,15 +9,15 @@ import (
 	"fmt"
 
 	"github.com/hashicorp/hcl/v2"
-	"github.com/opentofu/opentofu/internal/experiments"
-	"github.com/opentofu/opentofu/version"
+	"github.com/terramate-io/opentofulib/internal/experiments"
+	"github.com/terramate-io/opentofulib/version"
 )
 
 // When developing UI for experimental features, you can temporarily disable
 // the experiment warning by setting this package-level variable to a non-empty
 // value using a link-time flag:
 //
-// go install -ldflags="-X 'github.com/opentofu/opentofu/internal/configs.disableExperimentWarnings=yes'"
+// go install -ldflags="-X 'github.com/terramate-io/opentofulib/internal/configs.disableExperimentWarnings=yes'"
 //
 // This functionality is for development purposes only and is not a feature we
 // are committing to supporting for end users.

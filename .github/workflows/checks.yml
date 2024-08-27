@@ -70,17 +70,6 @@ jobs:
         with:
           go-version: ${{ steps.go.outputs.version }}
 
-      # NOTE: This cache is shared so the following step must always be
-      # identical across the unit-tests, e2e-tests, and consistency-checks
-      # jobs, or else weird things could happen.
-      - name: Cache Go modules
-        uses: actions/cache@88522ab9f39a2ea568f7027eddc7d8d8bc9d59c8 # v3.3.1
-        with:
-          path: "~/go/pkg"
-          key: go-mod-${{ hashFiles('go.sum') }}
-          restore-keys: |
-            go-mod-
-
       - name: "Unit tests"
         run: |
           go test ./...
@@ -101,17 +90,6 @@ jobs:
         uses: actions/setup-go@cdcb36043654635271a94b9a6d1392de5bb323a7 # v5.0.1
         with:
           go-version: ${{ steps.go.outputs.version }}
-
-      # NOTE: This cache is shared so the following step must always be
-      # identical across the unit-tests, e2e-tests, and consistency-checks
-      # jobs, or else weird things could happen.
-      - name: Cache Go modules
-        uses: actions/cache@88522ab9f39a2ea568f7027eddc7d8d8bc9d59c8 # v3.3.1
-        with:
-          path: "~/go/pkg"
-          key: go-mod-${{ hashFiles('go.sum') }}
-          restore-keys: |
-            go-mod-
 
       # The race detector add significant time to the unit tests, so only run
       # it for select packages.
@@ -140,17 +118,6 @@ jobs:
         with:
           go-version: ${{ steps.go.outputs.version }}
 
-      # NOTE: This cache is shared so the following step must always be
-      # identical across the unit-tests, e2e-tests, and consistency-checks
-      # jobs, or else weird things could happen.
-      - name: Cache Go modules
-        uses: actions/cache@88522ab9f39a2ea568f7027eddc7d8d8bc9d59c8 # v3.3.1
-        with:
-          path: "~/go/pkg"
-          key: go-mod-${{ hashFiles('go.sum') }}
-          restore-keys: |
-            go-mod-
-
       - name: "End-to-end tests"
         run: |
           TF_ACC=1 go test -v ./internal/command/e2etest
@@ -173,17 +140,6 @@ jobs:
         uses: actions/setup-go@cdcb36043654635271a94b9a6d1392de5bb323a7 # v5.0.1
         with:
           go-version: ${{ steps.go.outputs.version }}
-
-      # NOTE: This cache is shared so the following step must always be
-      # identical across the unit-tests, e2e-tests, and consistency-checks
-      # jobs, or else weird things could happen.
-      - name: Cache Go modules
-        uses: actions/cache@88522ab9f39a2ea568f7027eddc7d8d8bc9d59c8 # v3.3.1
-        with:
-          path: "~/go/pkg"
-          key: go-mod-${{ hashFiles('go.sum') }}
-          restore-keys: |
-            go-mod-
 
       - name: "go.mod and go.sum consistency check"
         run: |

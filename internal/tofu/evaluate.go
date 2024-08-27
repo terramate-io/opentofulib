@@ -16,16 +16,16 @@ import (
 	"github.com/hashicorp/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	"github.com/opentofu/opentofu/internal/configs"
-	"github.com/opentofu/opentofu/internal/configs/configschema"
-	"github.com/opentofu/opentofu/internal/didyoumean"
-	"github.com/opentofu/opentofu/internal/instances"
-	"github.com/opentofu/opentofu/internal/lang"
-	"github.com/opentofu/opentofu/internal/lang/marks"
-	"github.com/opentofu/opentofu/internal/plans"
-	"github.com/opentofu/opentofu/internal/states"
-	"github.com/opentofu/opentofu/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/internal/addrs"
+	"github.com/terramate-io/opentofulib/internal/configs"
+	"github.com/terramate-io/opentofulib/internal/configs/configschema"
+	"github.com/terramate-io/opentofulib/internal/didyoumean"
+	"github.com/terramate-io/opentofulib/internal/instances"
+	"github.com/terramate-io/opentofulib/internal/lang"
+	"github.com/terramate-io/opentofulib/internal/lang/marks"
+	"github.com/terramate-io/opentofulib/internal/plans"
+	"github.com/terramate-io/opentofulib/internal/states"
+	"github.com/terramate-io/opentofulib/internal/tfdiags"
 )
 
 // Evaluator provides the necessary contextual data for evaluating expressions
@@ -980,8 +980,8 @@ func (d *evaluationStateData) GetOutput(addr addrs.OutputValue, rng tfdiags.Sour
 
 	output := d.Evaluator.State.OutputValue(addr.Absolute(d.ModulePath))
 
-	// https://github.com/opentofu/opentofu/issues/257
-	// If the output is null - it does not serialize as part of the node_output state https://github.com/opentofu/opentofu/blob/4b623c56ffe9e6c1dc345e54470b71b0f261297a/internal/tofu/node_output.go#L592-L596
+	// https://github.com/terramate-io/opentofulib/issues/257
+	// If the output is null - it does not serialize as part of the node_output state https://github.com/terramate-io/opentofulib/blob/4b623c56ffe9e6c1dc345e54470b71b0f261297a/internal/tofu/node_output.go#L592-L596
 	// In such a case, we should simply return a nil value because OpenTofu test crash to evaluate for invalid memory address or nil pointer dereference
 	if output == nil {
 		return cty.NilVal, diags

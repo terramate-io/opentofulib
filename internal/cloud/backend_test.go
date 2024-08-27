@@ -14,13 +14,13 @@ import (
 
 	tfe "github.com/hashicorp/go-tfe"
 	version "github.com/hashicorp/go-version"
-	"github.com/opentofu/opentofu/internal/backend"
-	"github.com/opentofu/opentofu/internal/encryption"
-	"github.com/opentofu/opentofu/internal/tfdiags"
-	tfversion "github.com/opentofu/opentofu/version"
+	"github.com/terramate-io/opentofulib/internal/backend"
+	"github.com/terramate-io/opentofulib/internal/encryption"
+	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	tfversion "github.com/terramate-io/opentofulib/version"
 	"github.com/zclconf/go-cty/cty"
 
-	backendLocal "github.com/opentofu/opentofu/internal/backend/local"
+	backendLocal "github.com/terramate-io/opentofulib/internal/backend/local"
 )
 
 func TestCloud(t *testing.T) {
@@ -278,7 +278,7 @@ func TestCloud_PrepareConfigWithEnvVars(t *testing.T) {
 			},
 		},
 		"with workspace defined by tags overwritten by TF_WORKSPACE": {
-			// see https://github.com/opentofu/opentofu/issues/814 for context
+			// see https://github.com/terramate-io/opentofulib/issues/814 for context
 			config: cty.ObjectVal(map[string]cty.Value{
 				"hostname":     cty.StringVal("foo"),
 				"organization": cty.StringVal("bar"),
@@ -293,7 +293,7 @@ func TestCloud_PrepareConfigWithEnvVars(t *testing.T) {
 			},
 		},
 		"with TF_WORKSPACE value outside of the tags set": {
-			// see https://github.com/opentofu/opentofu/issues/814 for context
+			// see https://github.com/terramate-io/opentofulib/issues/814 for context
 			config: cty.ObjectVal(map[string]cty.Value{
 				"hostname":     cty.StringVal("foo"),
 				"organization": cty.StringVal("bar"),
@@ -685,7 +685,7 @@ func TestCloud_setConfigurationFieldsHappyPath(t *testing.T) {
 			expectedForceLocal: true,
 		},
 		"with hostname and workspace tags set, then tags should not be overwritten by TF_WORKSPACE": {
-			// see: https://github.com/opentofu/opentofu/issues/814
+			// see: https://github.com/terramate-io/opentofulib/issues/814
 			obj: cty.ObjectVal(map[string]cty.Value{
 				"organization": cty.NullVal(cty.String),
 				"hostname":     cty.StringVal("opentofu.org"),
