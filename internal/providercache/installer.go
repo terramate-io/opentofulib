@@ -14,10 +14,10 @@ import (
 
 	"github.com/apparentlymart/go-versions/versions"
 
-	"github.com/opentofu/opentofu/internal/addrs"
-	copydir "github.com/opentofu/opentofu/internal/copy"
-	"github.com/opentofu/opentofu/internal/depsfile"
-	"github.com/opentofu/opentofu/internal/getproviders"
+	"github.com/terramate-io/opentofulib/internal/addrs"
+	copydir "github.com/terramate-io/opentofulib/internal/copy"
+	"github.com/terramate-io/opentofulib/internal/depsfile"
+	"github.com/terramate-io/opentofulib/internal/getproviders"
 )
 
 // Installer is the main type in this package, representing a provider installer
@@ -679,7 +679,7 @@ NeedProvider:
 		var signedHashes []getproviders.Hash
 		// For now, we will temporarily trust the hashes returned by the
 		// installation process that are "SigningSkipped" or "Signed".
-		// This is only intended to be temporary, see https://github.com/opentofu/opentofu/issues/266 for more information
+		// This is only intended to be temporary, see https://github.com/terramate-io/opentofulib/issues/266 for more information
 		if authResult.Signed() || authResult.SigningSkipped() {
 			// We'll trust new hashes from upstream only if they were verified
 			// as signed by a suitable key or if the signing validation was skipped.
