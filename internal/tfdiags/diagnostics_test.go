@@ -15,7 +15,7 @@ import (
 	"github.com/hashicorp/go-multierror"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 func TestBuild(t *testing.T) {

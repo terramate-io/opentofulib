@@ -10,8 +10,8 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hcldec"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hcldec"
 	"github.com/zclconf/go-cty/cty"
 	ctyjson "github.com/zclconf/go-cty/cty/json"
 
@@ -101,7 +101,7 @@ func marshalExpressions(body hcl.Body, schema *configschema.Block) expressions {
 	// need the low-level schema.
 	lowSchema := hcldec.ImpliedSchema(schema.DecoderSpec())
 	// (lowSchema is an hcl.BodySchema:
-	// https://godoc.org/github.com/hashicorp/hcl/v2/hcl#BodySchema )
+	// https://godoc.org/github.com/terramate-io/hcl/v2/hcl#BodySchema )
 
 	// fix any ConfigModeAttr blocks present from legacy providers
 	body = blocktoattr.FixUpBlockAttrs(body, schema)

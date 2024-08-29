@@ -6,8 +6,8 @@
 package hcl2shim
 
 import (
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
 )
 
 // exprIsNativeQuotedString determines whether the given expression looks like

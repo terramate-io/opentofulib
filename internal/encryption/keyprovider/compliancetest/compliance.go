@@ -12,7 +12,7 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2/gohcl"
 	"github.com/terramate-io/opentofulib/internal/encryption/compliancetest"
 	"github.com/terramate-io/opentofulib/internal/encryption/config"
 	"github.com/terramate-io/opentofulib/internal/encryption/keyprovider"

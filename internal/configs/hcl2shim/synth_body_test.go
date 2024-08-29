@@ -8,7 +8,7 @@ package hcl2shim
 import (
 	"testing"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 )
 

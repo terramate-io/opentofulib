@@ -13,9 +13,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
 	homedir "github.com/mitchellh/go-homedir"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
 	"github.com/zclconf/go-cty/cty"
 
 	"github.com/terramate-io/opentofulib/internal/experiments"

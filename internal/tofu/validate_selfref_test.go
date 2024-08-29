@@ -12,8 +12,8 @@ import (
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
 	"github.com/terramate-io/opentofulib/internal/providers"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hcltest"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hcltest"
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/zclconf/go-cty/cty"
 )

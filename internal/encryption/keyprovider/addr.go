@@ -8,7 +8,7 @@ package keyprovider
 import (
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 // Addr is a type-alias for key provider address strings that identify a specific key provider configuration.

@@ -10,8 +10,8 @@ import (
 	"log"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/gohcl"
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/convert"
 

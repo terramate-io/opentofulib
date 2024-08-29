@@ -15,8 +15,8 @@ import (
 	"github.com/terramate-io/opentofulib/internal/encryption/config"
 	"github.com/terramate-io/opentofulib/internal/lang"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/gohcl"
 	"github.com/terramate-io/opentofulib/internal/encryption/keyprovider"
 	"github.com/terramate-io/opentofulib/internal/encryption/registry"
 	"github.com/zclconf/go-cty/cty"

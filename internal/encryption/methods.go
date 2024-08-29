@@ -9,8 +9,8 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/gohcl"
 	"github.com/terramate-io/opentofulib/internal/encryption/config"
 	"github.com/terramate-io/opentofulib/internal/encryption/method"
 	"github.com/terramate-io/opentofulib/internal/encryption/method/unencrypted"

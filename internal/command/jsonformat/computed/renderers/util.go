@@ -11,7 +11,7 @@ import (
 
 	"github.com/terramate-io/opentofulib/internal/command/format"
 
-	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
 
 	"github.com/terramate-io/opentofulib/internal/command/jsonformat/computed"
 	"github.com/terramate-io/opentofulib/internal/plans"

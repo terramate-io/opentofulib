@@ -8,7 +8,7 @@ package tofu
 import (
 	"testing"
 
-	"github.com/hashicorp/hcl/v2/hcltest"
+	"github.com/terramate-io/hcl/v2/hcltest"
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/instances"

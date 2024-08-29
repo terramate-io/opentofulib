@@ -15,10 +15,10 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/hashicorp/hcl/v2/hclwrite"
 	"github.com/mitchellh/cli"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2/hclwrite"
 
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"

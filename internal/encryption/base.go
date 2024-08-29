@@ -15,7 +15,7 @@ import (
 	"github.com/terramate-io/opentofulib/internal/encryption/method"
 	"github.com/terramate-io/opentofulib/internal/encryption/method/unencrypted"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 const (

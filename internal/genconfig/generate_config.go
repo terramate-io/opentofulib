@@ -11,8 +11,8 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclwrite"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclwrite"
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/json"
 

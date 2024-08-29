@@ -8,7 +8,7 @@ package hcl2shim
 import (
 	"fmt"
 
-	hcl2 "github.com/hashicorp/hcl/v2"
+	hcl2 "github.com/terramate-io/hcl/v2"
 )
 
 // SingleAttrBody is a weird implementation of hcl2.Body that acts as if

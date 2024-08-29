@@ -15,7 +15,7 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 // TestParseLoadConfigFileSuccess is a simple test that just verifies that

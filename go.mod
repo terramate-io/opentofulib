@@ -51,7 +51,6 @@ require (
 	github.com/hashicorp/go-uuid v1.0.3
 	github.com/hashicorp/go-version v1.6.0
 	github.com/hashicorp/hcl v1.0.0
-	github.com/hashicorp/hcl/v2 v2.20.1
 	github.com/hashicorp/jsonapi v0.0.0-20210826224640-ee7dae0fb22d
 	github.com/hashicorp/terraform-svchost v0.1.1
 	github.com/jmespath/go-jmespath v0.4.0
@@ -80,6 +79,7 @@ require (
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts v1.0.588
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.233
 	github.com/tencentyun/cos-go-sdk-v5 v0.7.29
+	github.com/terramate-io/hcl/v2 v2.0.0-rc2
 	github.com/tombuildsstuff/giovanni v0.15.1
 	github.com/xanzy/ssh-agent v0.3.1
 	github.com/xlab/treeprint v0.0.0-20161029104018-1d6e34225557
@@ -267,5 +267,3 @@ require (
 )
 
 go 1.21
-
-replace github.com/hashicorp/hcl/v2 v2.20.1 => github.com/opentofu/hcl/v2 v2.0.0-20240814143621-8048794c5c52

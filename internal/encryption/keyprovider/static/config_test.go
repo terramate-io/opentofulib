@@ -8,7 +8,7 @@ package static_test
 import (
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2/gohcl"
 
 	config2 "github.com/terramate-io/opentofulib/internal/encryption/config"
 	"github.com/terramate-io/opentofulib/internal/encryption/keyprovider/static"

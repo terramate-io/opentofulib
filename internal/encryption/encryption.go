@@ -6,7 +6,7 @@
 package encryption
 
 import (
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/encryption/config"
 	"github.com/terramate-io/opentofulib/internal/encryption/registry"

@@ -8,7 +8,7 @@ package tofu
 import (
 	"log"
 
-	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/checks"

@@ -9,9 +9,9 @@ import (
 	"fmt"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclparse"
 	"github.com/spf13/afero"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclparse"
 )
 
 // Parser is the main interface to read configuration files and other related

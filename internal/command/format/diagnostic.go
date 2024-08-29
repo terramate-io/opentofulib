@@ -12,7 +12,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	viewsjson "github.com/terramate-io/opentofulib/internal/command/views/json"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
 

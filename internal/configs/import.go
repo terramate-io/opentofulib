@@ -6,9 +6,9 @@
 package configs
 
 import (
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
-	hcljson "github.com/hashicorp/hcl/v2/json"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
+	hcljson "github.com/terramate-io/hcl/v2/json"
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/configs/hcl2shim"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"

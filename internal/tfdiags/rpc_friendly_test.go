@@ -14,7 +14,7 @@ import (
 
 	"github.com/davecgh/go-spew/spew"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 func TestDiagnosticsForRPC(t *testing.T) {

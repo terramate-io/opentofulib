@@ -16,9 +16,9 @@ import (
 	"github.com/aws/aws-sdk-go-v2/service/kms/types"
 	"github.com/davecgh/go-spew/spew"
 	awsbase "github.com/hashicorp/aws-sdk-go-base/v2"
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/gohcl"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
 	"github.com/terramate-io/opentofulib/internal/httpclient"
 	"github.com/terramate-io/opentofulib/version"
 )

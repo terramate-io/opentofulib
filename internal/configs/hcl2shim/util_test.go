@@ -9,9 +9,9 @@ import (
 	"reflect"
 	"testing"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
-	hclJSON "github.com/hashicorp/hcl/v2/json"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
+	hclJSON "github.com/terramate-io/hcl/v2/json"
 )
 
 func TestConvertJSONExpressionToHCL(t *testing.T) {
