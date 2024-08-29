@@ -12,7 +12,7 @@ import (
 	"strings"
 
 	version "github.com/hashicorp/go-version"
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
 )

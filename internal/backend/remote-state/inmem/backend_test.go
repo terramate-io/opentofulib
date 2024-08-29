@@ -10,7 +10,7 @@ import (
 	"os"
 	"testing"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 
 	"github.com/terramate-io/opentofulib/internal/backend"
 	"github.com/terramate-io/opentofulib/internal/encryption"

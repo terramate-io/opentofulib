@@ -8,7 +8,7 @@ package configs
 import (
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 // Provisioner represents a "provisioner" block when used within a

@@ -13,9 +13,9 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
 	svchost "github.com/hashicorp/terraform-svchost"
 	"github.com/posener/complete"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/zclconf/go-cty/cty"
 	"go.opentelemetry.io/otel/attribute"
 	"go.opentelemetry.io/otel/codes"

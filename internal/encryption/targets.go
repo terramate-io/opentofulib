@@ -8,8 +8,8 @@ package encryption
 import (
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/gohcl"
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/encryption/config"
 	"github.com/terramate-io/opentofulib/internal/encryption/keyprovider"
@@ -86,7 +86,7 @@ func (e *targetBuilder) build(target *config.TargetConfig, targetName string) (m
 
 	// gohcl has some weirdness around attributes that are not provided, but are hcl.Expressions
 	// They will set the attribute field to a static null expression
-	// https://github.com/hashicorp/hcl/blob/main/gohcl/decode.go#L112-L118
+	// https://github.com/terramate-io/hcl/blob/main/gohcl/decode.go#L112-L118
 
 	// Descriptor referenced by this target
 	var methodIdent *string

@@ -8,7 +8,7 @@ package inmem
 import (
 	"testing"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/opentofulib/internal/backend"
 	"github.com/terramate-io/opentofulib/internal/encryption"
 	"github.com/terramate-io/opentofulib/internal/states/remote"

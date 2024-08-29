@@ -6,8 +6,8 @@
 package views
 
 import (
-	"github.com/hashicorp/hcl/v2"
 	"github.com/mitchellh/colorstring"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/opentofulib/internal/command/arguments"
 	"github.com/terramate-io/opentofulib/internal/command/format"
 	"github.com/terramate-io/opentofulib/internal/terminal"

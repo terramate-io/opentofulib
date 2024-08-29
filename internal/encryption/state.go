@@ -9,7 +9,7 @@ import (
 	"encoding/json"
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/encryption/config"
 )

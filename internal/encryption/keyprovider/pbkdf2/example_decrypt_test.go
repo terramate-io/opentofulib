@@ -8,7 +8,7 @@ package pbkdf2_test
 import (
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2/gohcl"
 	"github.com/terramate-io/opentofulib/internal/encryption/keyprovider/pbkdf2"
 
 	"github.com/terramate-io/opentofulib/internal/encryption/config"

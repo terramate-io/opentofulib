@@ -8,7 +8,7 @@ package lang
 import (
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2/ext/tryfunc"
+	"github.com/terramate-io/hcl/v2/ext/tryfunc"
 	ctyyaml "github.com/zclconf/go-cty-yaml"
 	"github.com/zclconf/go-cty/cty"
 	"github.com/zclconf/go-cty/cty/function"

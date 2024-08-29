@@ -12,8 +12,8 @@ import (
 	"os"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/backend"
 	"github.com/terramate-io/opentofulib/internal/command/arguments"

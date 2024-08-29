@@ -11,8 +11,8 @@ import (
 	"testing"
 
 	uuid "github.com/hashicorp/go-uuid"
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hcldec"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hcldec"
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/configs"

@@ -8,9 +8,9 @@ package blocktoattr
 import (
 	"testing"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hcldec"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hcldec"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
 	"github.com/zclconf/go-cty/cty"
 )

@@ -10,8 +10,8 @@ import (
 	"log"
 	"sort"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hcldec"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hcldec"
 	"github.com/zclconf/go-cty/cty"
 
 	"github.com/terramate-io/opentofulib/internal/addrs"

@@ -5,7 +5,7 @@
 
 package configs
 
-import "github.com/hashicorp/hcl/v2"
+import "github.com/terramate-io/hcl/v2"
 
 type StateEncryption struct {
 	Type   string

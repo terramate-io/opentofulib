@@ -6,7 +6,7 @@
 package hcl2shim
 
 import (
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 // MergeBodies creates a new HCL body that contains a combination of the

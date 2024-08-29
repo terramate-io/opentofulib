@@ -6,7 +6,7 @@
 package configschema
 
 import (
-	"github.com/hashicorp/hcl/v2/hcldec"
+	"github.com/terramate-io/hcl/v2/hcldec"
 	"github.com/zclconf/go-cty/cty"
 )
 

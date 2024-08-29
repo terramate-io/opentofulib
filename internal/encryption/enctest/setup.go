@@ -8,7 +8,7 @@ package enctest
 // This package is used for supplying a fully configured encryption instance for use in unit and integration tests
 
 import (
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/encryption"
 	"github.com/terramate-io/opentofulib/internal/encryption/config"

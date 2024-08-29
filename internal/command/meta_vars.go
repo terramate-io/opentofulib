@@ -11,9 +11,9 @@ import (
 	"path/filepath"
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
-	hcljson "github.com/hashicorp/hcl/v2/json"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
+	hcljson "github.com/terramate-io/hcl/v2/json"
 
 	"github.com/terramate-io/opentofulib/internal/backend"
 	"github.com/terramate-io/opentofulib/internal/configs"

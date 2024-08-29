@@ -16,8 +16,8 @@ import (
 	"github.com/davecgh/go-spew/spew"
 
 	version "github.com/hashicorp/go-version"
-	"github.com/hashicorp/hcl/v2"
 	"github.com/spf13/afero"
+	"github.com/terramate-io/hcl/v2"
 )
 
 // testParser returns a parser that reads files from the given map, which

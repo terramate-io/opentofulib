@@ -8,8 +8,8 @@ package tofumigrate
 import (
 	"os"
 
-	"github.com/hashicorp/hcl/v2"
 	tfaddr "github.com/opentofu/registry-address"
+	"github.com/terramate-io/hcl/v2"
 
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/getproviders"

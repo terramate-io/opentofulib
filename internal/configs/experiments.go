@@ -8,7 +8,7 @@ package configs
 import (
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/opentofulib/internal/experiments"
 	"github.com/terramate-io/opentofulib/version"
 )

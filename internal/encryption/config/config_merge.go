@@ -6,7 +6,7 @@
 package config
 
 import (
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/opentofulib/internal/configs/hcl2shim"
 )
 

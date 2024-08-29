@@ -8,8 +8,8 @@ package config
 import (
 	"fmt"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/gohcl"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/gohcl"
 )
 
 // DecodeConfig takes a hcl.Body and decodes it into a Config struct.

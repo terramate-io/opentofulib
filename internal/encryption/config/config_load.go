@@ -8,9 +8,9 @@ package config
 import (
 	"strings"
 
-	"github.com/hashicorp/hcl/v2"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
-	"github.com/hashicorp/hcl/v2/json"
+	"github.com/terramate-io/hcl/v2"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2/json"
 )
 
 // LoadConfigFromString loads a configuration from a string. The sourceName is used to identify the source of the

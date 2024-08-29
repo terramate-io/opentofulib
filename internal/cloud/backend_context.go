@@ -10,10 +10,10 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 
 	tfe "github.com/hashicorp/go-tfe"
-	"github.com/hashicorp/hcl/v2/hclsyntax"
+	"github.com/terramate-io/hcl/v2/hclsyntax"
 	"github.com/terramate-io/opentofulib/internal/backend"
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/states/statemgr"

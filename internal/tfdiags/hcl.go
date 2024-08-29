@@ -6,7 +6,7 @@
 package tfdiags
 
 import (
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 // hclDiagnostic is a Diagnostic implementation that wraps a HCL Diagnostic

@@ -16,8 +16,8 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/hashicorp/hcl/v2/hcldec"
 	"github.com/lib/pq"
+	"github.com/terramate-io/hcl/v2/hcldec"
 	"github.com/terramate-io/opentofulib/internal/backend"
 	"github.com/terramate-io/opentofulib/internal/encryption"
 	"github.com/terramate-io/opentofulib/internal/states/remote"

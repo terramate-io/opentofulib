@@ -8,7 +8,7 @@ package tfdiags
 import (
 	"testing"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 )
 
 func TestOverride_UpdatesSeverity(t *testing.T) {

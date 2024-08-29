@@ -9,7 +9,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/hashicorp/hcl/v2"
+	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
 	"github.com/terramate-io/opentofulib/internal/providers"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
