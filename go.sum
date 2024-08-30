@@ -1024,8 +1024,8 @@ github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.233 h1:5Tbi+jy
 github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.233/go.mod h1:sX14+NSvMjOhNFaMtP2aDy6Bss8PyFXij21gpY6+DAs=
 github.com/tencentyun/cos-go-sdk-v5 v0.7.29 h1:uwRBzc70Wgtc5iQQCowqecfRT0OpCXUOZzodZHOOEDs=
 github.com/tencentyun/cos-go-sdk-v5 v0.7.29/go.mod h1:4E4+bQ2gBVJcgEC9Cufwylio4mXOct2iu05WjgEBx1o=
-github.com/terramate-io/hcl/v2 v2.0.0-rc2 h1:vI5rWl1hiFKKijOZvrryWmk94PiTtW6QHyBssMYuf3U=
-github.com/terramate-io/hcl/v2 v2.0.0-rc2/go.mod h1:5M0ouzGQXtZ6hnSkVPudYu1EQixH6AfFuPDqqjIkwQU=
+github.com/terramate-io/hcl/v2 v2.0.0-rc3 h1:ZreBxBS/bKaYl7zLQfnJL7/+CYusNmyQZP1mKGYzi/w=
+github.com/terramate-io/hcl/v2 v2.0.0-rc3/go.mod h1:5M0ouzGQXtZ6hnSkVPudYu1EQixH6AfFuPDqqjIkwQU=
 github.com/thanhpk/randstr v1.0.4 h1:IN78qu/bR+My+gHCvMEXhR/i5oriVHcTB/BJJIRTsNo=
 github.com/thanhpk/randstr v1.0.4/go.mod h1:M/H2P1eNLZzlDwAzpkkkUvoyNNMbzRGhESZuEQk3r0U=
 github.com/thlib/go-timezone-local v0.0.0-20210907160436-ef149e42d28e h1:BuzhfgfWQbX0dWzYzT1zsORLnHRv3bcRcsaUk0VmXA8=
