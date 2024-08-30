@@ -13,7 +13,7 @@ import (
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/encryption/config"
-	"github.com/terramate-io/opentofulib/internal/lang"
+	"github.com/terramate-io/opentofulib/lang"
 
 	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/hcl/v2/gohcl"

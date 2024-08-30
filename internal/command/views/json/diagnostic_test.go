@@ -17,8 +17,8 @@ import (
 	"github.com/google/go-cmp/cmp"
 	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/hcl/v2/hcltest"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 )
 

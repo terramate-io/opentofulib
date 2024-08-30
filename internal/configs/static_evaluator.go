@@ -10,7 +10,7 @@ import (
 	"github.com/terramate-io/hcl/v2/gohcl"
 	"github.com/terramate-io/hcl/v2/hcldec"
 	"github.com/terramate-io/opentofulib/internal/addrs"
-	"github.com/terramate-io/opentofulib/internal/lang"
+	"github.com/terramate-io/opentofulib/lang"
 	"github.com/zclconf/go-cty/cty"
 )
 

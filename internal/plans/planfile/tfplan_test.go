@@ -14,10 +14,10 @@ import (
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/checks"
-	"github.com/terramate-io/opentofulib/internal/lang/globalref"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/plans"
 	"github.com/terramate-io/opentofulib/internal/states"
+	"github.com/terramate-io/opentofulib/lang/globalref"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 func TestTFPlanRoundTrip(t *testing.T) {

@@ -17,10 +17,10 @@ import (
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
 	"github.com/terramate-io/opentofulib/internal/didyoumean"
 	"github.com/terramate-io/opentofulib/internal/instances"
-	"github.com/terramate-io/opentofulib/internal/lang"
 	"github.com/terramate-io/opentofulib/internal/providers"
 	"github.com/terramate-io/opentofulib/internal/provisioners"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang"
 )
 
 // NodeValidatableResource represents a resource that is used for validation

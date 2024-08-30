@@ -15,7 +15,7 @@ import (
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
 	"github.com/terramate-io/opentofulib/internal/dag"
-	"github.com/terramate-io/opentofulib/internal/lang"
+	"github.com/terramate-io/opentofulib/lang"
 )
 
 // GraphNodeReferenceable must be implemented by any node that represents

@@ -12,13 +12,13 @@ import (
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
 	"github.com/terramate-io/opentofulib/internal/encryption"
 	"github.com/terramate-io/opentofulib/internal/instances"
-	"github.com/terramate-io/opentofulib/internal/lang"
 	"github.com/terramate-io/opentofulib/internal/plans"
 	"github.com/terramate-io/opentofulib/internal/providers"
 	"github.com/terramate-io/opentofulib/internal/provisioners"
 	"github.com/terramate-io/opentofulib/internal/refactoring"
 	"github.com/terramate-io/opentofulib/internal/states"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang"
 	"github.com/zclconf/go-cty/cty"
 )
 

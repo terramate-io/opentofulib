@@ -18,9 +18,9 @@ import (
 	"github.com/terramate-io/opentofulib/internal/checks"
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/instances"
-	"github.com/terramate-io/opentofulib/internal/lang"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 // evalCheckRules ensures that all of the given check rules pass against

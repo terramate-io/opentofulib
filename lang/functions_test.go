@@ -19,7 +19,7 @@ import (
 	"github.com/zclconf/go-cty/cty"
 
 	"github.com/terramate-io/opentofulib/internal/experiments"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 // TestFunctions tests that functions are callable through the functionality

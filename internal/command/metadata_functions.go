@@ -11,7 +11,7 @@ import (
 	"github.com/zclconf/go-cty/cty/function"
 
 	"github.com/terramate-io/opentofulib/internal/command/jsonfunction"
-	"github.com/terramate-io/opentofulib/internal/lang"
+	"github.com/terramate-io/opentofulib/lang"
 )
 
 var (

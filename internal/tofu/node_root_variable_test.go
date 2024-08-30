@@ -15,7 +15,7 @@ import (
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/checks"
 	"github.com/terramate-io/opentofulib/internal/configs"
-	"github.com/terramate-io/opentofulib/internal/lang"
+	"github.com/terramate-io/opentofulib/lang"
 )
 
 func TestNodeRootVariableExecute(t *testing.T) {
