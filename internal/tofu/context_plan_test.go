@@ -25,12 +25,12 @@ import (
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
 	"github.com/terramate-io/opentofulib/internal/configs/hcl2shim"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/plans"
 	"github.com/terramate-io/opentofulib/internal/providers"
 	"github.com/terramate-io/opentofulib/internal/provisioners"
 	"github.com/terramate-io/opentofulib/internal/states"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 func TestContext2Plan_basic(t *testing.T) {

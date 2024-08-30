@@ -16,8 +16,8 @@ import (
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/configs/hcl2shim"
-	"github.com/terramate-io/opentofulib/internal/lang"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang"
 )
 
 // Resource represents a "resource" or "data" block in a module or file.

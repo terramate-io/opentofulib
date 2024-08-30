@@ -10,8 +10,8 @@ import (
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
-	"github.com/terramate-io/opentofulib/internal/lang/blocktoattr"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang/blocktoattr"
 )
 
 // References finds all of the references in the given set of traversals,

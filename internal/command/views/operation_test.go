@@ -14,12 +14,12 @@ import (
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/command/arguments"
 	"github.com/terramate-io/opentofulib/internal/encryption"
-	"github.com/terramate-io/opentofulib/internal/lang/globalref"
 	"github.com/terramate-io/opentofulib/internal/plans"
 	"github.com/terramate-io/opentofulib/internal/states"
 	"github.com/terramate-io/opentofulib/internal/states/statefile"
 	"github.com/terramate-io/opentofulib/internal/terminal"
 	"github.com/terramate-io/opentofulib/internal/tofu"
+	"github.com/terramate-io/opentofulib/lang/globalref"
 	"github.com/zclconf/go-cty/cty"
 )
 

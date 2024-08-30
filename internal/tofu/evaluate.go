@@ -21,11 +21,11 @@ import (
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
 	"github.com/terramate-io/opentofulib/internal/didyoumean"
 	"github.com/terramate-io/opentofulib/internal/instances"
-	"github.com/terramate-io/opentofulib/internal/lang"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/plans"
 	"github.com/terramate-io/opentofulib/internal/states"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 // Evaluator provides the necessary contextual data for evaluating expressions

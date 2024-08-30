@@ -12,7 +12,7 @@ import (
 	"github.com/terramate-io/hcl/v2/hclsyntax"
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
-	"github.com/terramate-io/opentofulib/internal/lang"
+	"github.com/terramate-io/opentofulib/lang"
 )
 
 // CheckRule represents a configuration-defined validation rule, precondition,

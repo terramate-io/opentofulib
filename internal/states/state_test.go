@@ -14,7 +14,7 @@ import (
 	"github.com/zclconf/go-cty/cty"
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 func TestState(t *testing.T) {

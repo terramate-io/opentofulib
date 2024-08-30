@@ -9,7 +9,7 @@ import (
 	"strings"
 	"testing"
 
-	"github.com/terramate-io/opentofulib/internal/lang/funcs"
+	"github.com/terramate-io/opentofulib/lang/funcs"
 )
 
 func TestFunctionDescriptions(t *testing.T) {

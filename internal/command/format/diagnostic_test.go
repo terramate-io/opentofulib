@@ -18,7 +18,7 @@ import (
 	"github.com/zclconf/go-cty/cty/function"
 
 	viewsjson "github.com/terramate-io/opentofulib/internal/command/views/json"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
+	"github.com/terramate-io/opentofulib/lang/marks"
 
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
 )

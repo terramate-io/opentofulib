@@ -16,8 +16,8 @@ import (
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/dag"
 	"github.com/terramate-io/opentofulib/internal/instances"
-	"github.com/terramate-io/opentofulib/internal/lang"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang"
 )
 
 // nodeExpandModuleVariable is the placeholder for an variable that has not yet had

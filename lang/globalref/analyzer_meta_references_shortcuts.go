@@ -9,7 +9,7 @@ import (
 	"fmt"
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
-	"github.com/terramate-io/opentofulib/internal/lang"
+	"github.com/terramate-io/opentofulib/lang"
 )
 
 // ReferencesFromOutputValue returns all of the direct references from the

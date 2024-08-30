@@ -13,8 +13,8 @@ import (
 	"github.com/zclconf/go-cty/cty"
 
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 func TestAssertObjectCompatible(t *testing.T) {

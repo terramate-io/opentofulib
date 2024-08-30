@@ -18,9 +18,9 @@ import (
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/checks"
 	"github.com/terramate-io/opentofulib/internal/encryption"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/states"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 func readStateV4(src []byte) (*File, tfdiags.Diagnostics) {

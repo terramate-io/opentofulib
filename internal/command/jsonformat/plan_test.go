@@ -21,12 +21,12 @@ import (
 	"github.com/terramate-io/opentofulib/internal/command/jsonplan"
 	"github.com/terramate-io/opentofulib/internal/command/jsonprovider"
 	"github.com/terramate-io/opentofulib/internal/configs/configschema"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/plans"
 	"github.com/terramate-io/opentofulib/internal/providers"
 	"github.com/terramate-io/opentofulib/internal/states"
 	"github.com/terramate-io/opentofulib/internal/terminal"
 	"github.com/terramate-io/opentofulib/internal/tofu"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 func TestRenderHuman_EmptyPlan(t *testing.T) {

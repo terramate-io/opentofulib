@@ -16,7 +16,7 @@ import (
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/experiments"
-	"github.com/terramate-io/opentofulib/internal/lang/funcs"
+	"github.com/terramate-io/opentofulib/lang/funcs"
 )
 
 var impureFunctions = []string{

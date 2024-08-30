@@ -67,5 +67,5 @@ func (d rpcFriendlyDiag) ExtraInfo() interface{} {
 }
 
 func init() {
-	gob.RegisterName("tfdiags.rpcFriendlyDiag", (*rpcFriendlyDiag)(nil))
+	gob.Register((*rpcFriendlyDiag)(nil))
 }

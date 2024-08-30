@@ -15,9 +15,9 @@ import (
 
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/checks"
-	"github.com/terramate-io/opentofulib/internal/lang"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang"
+	"github.com/terramate-io/opentofulib/lang/marks"
 )
 
 func TestPrepareFinalInputVariableValue(t *testing.T) {

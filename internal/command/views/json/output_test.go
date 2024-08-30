@@ -11,9 +11,9 @@ import (
 
 	"github.com/google/go-cmp/cmp"
 	"github.com/terramate-io/opentofulib/internal/addrs"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/plans"
 	"github.com/terramate-io/opentofulib/internal/states"
+	"github.com/terramate-io/opentofulib/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 )
 

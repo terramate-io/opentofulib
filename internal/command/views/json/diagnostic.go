@@ -16,8 +16,8 @@ import (
 	"github.com/terramate-io/hcl/v2/hcled"
 	"github.com/terramate-io/hcl/v2/hclparse"
 	"github.com/terramate-io/hcl/v2/hclsyntax"
-	"github.com/terramate-io/opentofulib/internal/lang/marks"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
+	"github.com/terramate-io/opentofulib/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 )
 
