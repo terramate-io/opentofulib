@@ -33,6 +33,8 @@ func TestDiagnosticsForRPC(t *testing.T) {
 		},
 	})
 
+	RegisterTypes()
+
 	buf := bytes.Buffer{}
 	enc := gob.NewEncoder(&buf)
 	dec := gob.NewDecoder(&buf)

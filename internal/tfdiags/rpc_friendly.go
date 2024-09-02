@@ -66,6 +66,8 @@ func (d rpcFriendlyDiag) ExtraInfo() interface{} {
 	return nil
 }
 
-func init() {
+// RegisterTypes explicitly register the types needed for encoding/decoding tfdiags RPC
+// messages.
+func RegisterTypes() {
 	gob.Register((*rpcFriendlyDiag)(nil))
 }
