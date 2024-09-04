@@ -33,7 +33,7 @@
     {
       "severity": "error",
       "summary": "Unsupported argument",
-      "detail": "An argument named \"values\" is not expected here. Did you mean \"value\"?",
+      "detail": "An argument named \"values\" is not expected here",
       "range": {
         "filename": "testdata/validate-invalid/outputs/main.tf",
         "start": {

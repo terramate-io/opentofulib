@@ -229,19 +229,19 @@ func TestTest_Full_Output(t *testing.T) {
 			code:     1,
 		},
 		"broken_wrong_block_resource": {
-			expected: "Blocks of type \"resource\" are not expected here.",
+			expected: "Blocks of type \"resource\" are not expected here",
 			code:     1,
 		},
 		"broken_wrong_block_data": {
-			expected: "Blocks of type \"data\" are not expected here.",
+			expected: "Blocks of type \"data\" are not expected here",
 			code:     1,
 		},
 		"broken_wrong_block_output": {
-			expected: "Blocks of type \"output\" are not expected here.",
+			expected: "Blocks of type \"output\" are not expected here",
 			code:     1,
 		},
 		"broken_wrong_block_check": {
-			expected: "Blocks of type \"check\" are not expected here.",
+			expected: "Blocks of type \"check\" are not expected here",
 			code:     1,
 		},
 		"not_exists_output": {

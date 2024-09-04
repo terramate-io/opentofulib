@@ -10570,7 +10570,7 @@ func TestContext2Apply_ProviderMeta_refresh_setInvalid(t *testing.T) {
 				t.Errorf("Unexpected error %+v", diag.Description())
 			}
 		case "Unsupported argument":
-			if diag.Description().Detail == `An argument named "baz" is not expected here.` {
+			if diag.Description().Detail == `An argument named "baz" is not expected here` {
 				invalidErr = true
 			} else {
 				t.Errorf("Unexpected error %+v", diag.Description())
@@ -10833,7 +10833,7 @@ func TestContext2Apply_ProviderMeta_refreshdata_setInvalid(t *testing.T) {
 				t.Errorf("Unexpected error %+v", diag.Description())
 			}
 		case "Unsupported argument":
-			if diag.Description().Detail == `An argument named "baz" is not expected here.` {
+			if diag.Description().Detail == `An argument named "baz" is not expected here` {
 				invalidErr = true
 			} else {
 				t.Errorf("Unexpected error %+v", diag.Description())

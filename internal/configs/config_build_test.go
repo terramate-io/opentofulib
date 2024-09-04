@@ -102,7 +102,7 @@ func TestBuildConfigDiags(t *testing.T) {
 	))
 
 	wantDiag := filepath.FromSlash(`testdata/nested-errors/child_c/child_c.tf:5,1-8: `) +
-		`Unsupported block type; Blocks of type "invalid" are not expected here.`
+		`Unsupported block type; Blocks of type "invalid" are not expected here`
 	assertExactDiagnostics(t, diags, []string{wantDiag})
 
 	// we should still have module structure loaded
