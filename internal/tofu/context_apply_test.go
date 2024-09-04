@@ -10352,7 +10352,7 @@ func TestContext2Apply_ProviderMeta_plan_setInvalid(t *testing.T) {
 				t.Errorf("Unexpected error %+v", diag.Description())
 			}
 		case "Unsupported argument":
-			if diag.Description().Detail == `An argument named "baz" is not expected here` {
+			if diag.Description().Detail == bazNotExpectedErrorString {
 				invalidErr = true
 			} else {
 				t.Errorf("Unexpected error %+v", diag.Description())
@@ -10570,7 +10570,7 @@ func TestContext2Apply_ProviderMeta_refresh_setInvalid(t *testing.T) {
 				t.Errorf("Unexpected error %+v", diag.Description())
 			}
 		case "Unsupported argument":
-			if diag.Description().Detail == `An argument named "baz" is not expected here` {
+			if diag.Description().Detail == bazNotExpectedErrorString {
 				invalidErr = true
 			} else {
 				t.Errorf("Unexpected error %+v", diag.Description())
@@ -10833,7 +10833,7 @@ func TestContext2Apply_ProviderMeta_refreshdata_setInvalid(t *testing.T) {
 				t.Errorf("Unexpected error %+v", diag.Description())
 			}
 		case "Unsupported argument":
-			if diag.Description().Detail == `An argument named "baz" is not expected here` {
+			if diag.Description().Detail == bazNotExpectedErrorString {
 				invalidErr = true
 			} else {
 				t.Errorf("Unexpected error %+v", diag.Description())
@@ -12875,6 +12875,8 @@ resource "test_object" "a" {
 		t.Fatalf("error missing expected info: %q", errString)
 	}
 }
+
+const bazNotExpectedErrorString = `An argument named "baz" is not expected here`
 
 ////////////////////////////////////////////////////////////////////////////////
 // NOTE: Due to the size of this file, new tests should be added to
