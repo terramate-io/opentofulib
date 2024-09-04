@@ -79,7 +79,7 @@ require (
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/sts v1.0.588
 	github.com/tencentcloud/tencentcloud-sdk-go/tencentcloud/tag v1.0.233
 	github.com/tencentyun/cos-go-sdk-v5 v0.7.29
-	github.com/terramate-io/hcl/v2 v2.0.0-rc5
+	github.com/terramate-io/hcl/v2 v2.0.0-rc6
 	github.com/tombuildsstuff/giovanni v0.15.1
 	github.com/xanzy/ssh-agent v0.3.1
 	github.com/xlab/treeprint v0.0.0-20161029104018-1d6e34225557

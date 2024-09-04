@@ -10352,7 +10352,7 @@ func TestContext2Apply_ProviderMeta_plan_setInvalid(t *testing.T) {
 				t.Errorf("Unexpected error %+v", diag.Description())
 			}
 		case "Unsupported argument":
-			if diag.Description().Detail == `An argument named "baz" is not expected here.` {
+			if diag.Description().Detail == `An argument named "baz" is not expected here` {
 				invalidErr = true
 			} else {
 				t.Errorf("Unexpected error %+v", diag.Description())
