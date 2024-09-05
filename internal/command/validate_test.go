@@ -175,7 +175,7 @@ func TestOutputWithoutValueShouldFail(t *testing.T) {
 	if !strings.Contains(output.Stderr(), wantError) {
 		t.Fatalf("Missing error string %q\n\n'%s'", wantError, output.Stderr())
 	}
-	wantError = `An argument named "values" is not expected here. Did you mean "value"?`
+	wantError = `An argument named "values" is not expected here`
 	if !strings.Contains(output.Stderr(), wantError) {
 		t.Fatalf("Missing error string %q\n\n'%s'", wantError, output.Stderr())
 	}

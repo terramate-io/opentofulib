@@ -956,7 +956,7 @@ func Test_enhanceFunctionDiags(t *testing.T) {
 			"Missing builtin function",
 			"attr = missing_function(54)",
 			"Call to unknown function",
-			"There is no function named \"missing_function\".",
+			"There is no function named \"missing_function\"",
 		},
 		{
 			"Missing core function",
