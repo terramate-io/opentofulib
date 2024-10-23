@@ -234,7 +234,6 @@ func (t *ProviderTransformer) Transform(g *Graph) error {
 
 			// see if this is a proxy provider pointing to another concrete config
 			if p, ok := target.(*graphNodeProxyProvider); ok {
-				g.Remove(p)
 				target = p.Target()
 			}
 
@@ -356,7 +355,6 @@ func (t *ProviderFunctionTransformer) Transform(g *Graph) error {
 
 					// see if this is a proxy provider pointing to another concrete config
 					if p, ok := provider.(*graphNodeProxyProvider); ok {
-						g.Remove(p)
 						provider = p.Target()
 					}
 
@@ -503,6 +501,7 @@ func (t *PruneProviderTransformer) Transform(g *Graph) error {
 		if _, ok := v.(*graphNodeProxyProvider); ok {
 			log.Printf("[DEBUG] pruning proxy %s", dag.VertexName(v))
 			g.Remove(v)
+			continue
 		}
 
 		// Remove providers with no dependencies.

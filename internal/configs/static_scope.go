@@ -11,12 +11,12 @@ import (
 	"path/filepath"
 
 	"github.com/terramate-io/hcl/v2"
-	"github.com/zclconf/go-cty/cty"
-
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/internal/didyoumean"
 	"github.com/terramate-io/opentofulib/internal/tfdiags"
 	"github.com/terramate-io/opentofulib/lang"
+	"github.com/terramate-io/opentofulib/lang/marks"
+	"github.com/zclconf/go-cty/cty"
 )
 
 // newStaticScope creates a lang.Scope that's backed by the static view of the module represented by the StaticEvaluator
@@ -256,6 +256,18 @@ func (s staticScopeData) GetInputVariable(ident addrs.InputVariable, rng tfdiags
 	}
 
 	val, valDiags := s.eval.call.vars(variable)
+	if variable.Sensitive {
+		if os.Getenv("TOFU_ENABLE_STATIC_SENSITIVE") != "" {
+			val = val.Mark(marks.Sensitive)
+		} else {
+			diags = diags.Append(&hcl.Diagnostic{
+				Severity: hcl.DiagWarning,
+				Summary:  "Sensitive value used in static context",
+				Detail:   "Due to a bug in the v1.8.0 OpenTofu release, variables in a static context were not checked for sensitivity. In order to prevent a patch release from breaking compatability, this additional security check defaults to a warning and is flagged behind the TOFU_ENABLE_STATIC_SENSITIVE environment variable.  It is highly recommended to enable this check as it will be enabled by default in OpenTofu v1.9.0",
+				Subject:  rng.ToHCL().Ptr(),
+			})
+		}
+	}
 	return val, s.enhanceDiagnostics(id, diags.Append(valDiags))
 }
 

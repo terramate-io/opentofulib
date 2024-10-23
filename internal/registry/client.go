@@ -246,6 +246,11 @@ func (c *Client) ModuleLocation(ctx context.Context, module *regsrc.Module, vers
 
 		location = v.Location
 
+		// if the location is empty, we will fallback to the header
+		if location == "" {
+			location = resp.Header.Get(xTerraformGet)
+		}
+
 	case http.StatusNoContent:
 		// FALLBACK: set the found location from the header
 		location = resp.Header.Get(xTerraformGet)
