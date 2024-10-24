@@ -14,6 +14,7 @@ import (
 	"github.com/terramate-io/opentofulib/internal/configs"
 	"github.com/terramate-io/opentofulib/internal/encryption/config"
 	"github.com/terramate-io/opentofulib/lang"
+	"github.com/terramate-io/opentofulib/lang/marks"
 
 	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/hcl/v2/gohcl"
@@ -185,6 +186,14 @@ func (e *targetBuilder) setupKeyProvider(cfg config.KeyProviderConfig, stack []c
 	diags = append(diags, evalDiags...)
 	if diags.HasErrors() {
 		return diags
+	}
+
+	// gohcl does not handle marks, we need to remove the sensitive marks from any input variables
+	// We assume that the entire configuration in the encryption block should be treated as sensitive
+	for key, sv := range evalCtx.Variables {
+		if marks.Contains(sv, marks.Sensitive) {
+			evalCtx.Variables[key], _ = sv.UnmarkDeep()
+		}
 	}
 
 	// Initialize the Key Provider

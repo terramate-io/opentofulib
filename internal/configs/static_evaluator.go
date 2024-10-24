@@ -6,11 +6,14 @@
 package configs
 
 import (
+	"fmt"
+
 	"github.com/terramate-io/hcl/v2"
 	"github.com/terramate-io/hcl/v2/gohcl"
 	"github.com/terramate-io/hcl/v2/hcldec"
 	"github.com/terramate-io/opentofulib/internal/addrs"
 	"github.com/terramate-io/opentofulib/lang"
+	"github.com/terramate-io/opentofulib/lang/marks"
 	"github.com/zclconf/go-cty/cty"
 )
 
@@ -90,21 +93,21 @@ func (s StaticEvaluator) Evaluate(expr hcl.Expression, ident StaticIdentifier) (
 }
 
 func (s StaticEvaluator) DecodeExpression(expr hcl.Expression, ident StaticIdentifier, val any) hcl.Diagnostics {
-	var diags hcl.Diagnostics
-
-	refs, refsDiags := lang.ReferencesInExpr(addrs.ParseRef, expr)
-	diags = append(diags, refsDiags.ToHCL()...)
+	srcVal, diags := s.Evaluate(expr, ident)
 	if diags.HasErrors() {
 		return diags
 	}
 
-	ctx, ctxDiags := s.scope(ident).EvalContext(refs)
-	diags = append(diags, ctxDiags.ToHCL()...)
-	if diags.HasErrors() {
-		return diags
+	if marks.Contains(srcVal, marks.Sensitive) {
+		return diags.Append(&hcl.Diagnostic{
+			Severity: hcl.DiagError,
+			Summary:  "Sensitive value not allowed",
+			Detail:   fmt.Sprintf("Sensitive values, or values derived from sensitive values, cannot be used as %s.", ident.String()),
+			Subject:  expr.Range().Ptr(),
+		})
 	}
 
-	return gohcl.DecodeExpression(expr, ctx, val)
+	return diags.Extend(gohcl.DecodeValue(srcVal, expr.StartRange(), expr.Range(), val))
 }
 
 func (s StaticEvaluator) DecodeBlock(body hcl.Body, spec hcldec.Spec, ident StaticIdentifier) (cty.Value, hcl.Diagnostics) {
